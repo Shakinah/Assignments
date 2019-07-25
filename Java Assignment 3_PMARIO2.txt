@@ -1,0 +1,131 @@
+1. Calculator using Method overloading
+
+PROGRAM
+
+import java.util.Scanner;
+
+public void class Calculator
+	{
+
+	public void add(int n1,int n2)
+	{
+	int sum=n1+n2;
+	System.out.println("Sum of the numbers is" +sum);
+	}
+	
+
+	public void add(int n1,int n2,int n3)
+	{
+	int sum=n1+n2+n3;
+	System.out.println("Sum of the numbers is" +sum);
+	}
+
+	public void subtract(int n1,int n2)
+	{
+	int difference=n1-n2;
+	System.out.println("Difference of the numbers is" +difference);
+	}
+
+	public void subtract(int n1,int n2,int n3)
+	{
+	int difference=n1-n2-n3;
+	System.out.println("Difference of the numbers is" +difference);
+	}
+	
+	public void multiply(int n1,int n2)
+	{
+	double product=n1*n2;
+	System.out.println("Product of the numbers is" +product);
+	}
+
+	public void divide(int n1,int n2)
+	{
+	double quotient=n1/n2;
+	System.out.println(" Division of the numbers is" +quotient);
+	}
+    
+}
+
+public static void main()
+	{
+
+	int number;
+	Calculator calc=new Calculator();
+
+    	System.out.println("Please choose one of the below calculator operations:");
+    	System.out.println("1.Addition of 2 nos.");
+	System.out.println("2.Addition of 3 nos.");
+        System.out.println("3.Subtration of 2 nos.");
+        System.out.println("4.Subtraction of 3 nos.");
+        System.out.println("5.Multiplication of 2 nos.");
+        System.out.println("6.Division of 2 nos.");
+        
+        Scanner number = new Scanner(System.in);
+
+        number=choice.nextInt();
+
+    	switch (number){
+                                    case 1: 
+                                    	System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					calc.add(n1,n2);
+
+                                    break;
+
+                                    
+                                    case 2:
+					System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					System.out.println("Please enter Number 3 : ");
+					int n2=number.nextInt();
+					calc.add(n1,n2,n3); 
+                                    break;
+
+
+                                    case 3: 
+                                    	System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					calc.subtract(n1,n2);
+
+                                    break;
+                                    
+                                    case 4: 
+                                    	System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					System.out.println("Please enter Number 3 : ");
+					int n2=number.nextInt();
+					calc.subtract(n1,n2,n3); 
+                                    break;
+
+                                    case 5: 
+                                    	System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					calc.multiply(n1,n2);
+                                    break;
+
+				    case 6: 
+                                    	System.out.println("Please enter Number 1 : ");
+					int n1=number.nextInt();
+					System.out.println("Please enter Number 2 : ");
+					int n2=number.nextInt();
+					calc.divide(n1,n2);
+                                    break;
+                    }
+    	
+  		}	
+
+
+
+
+
+
